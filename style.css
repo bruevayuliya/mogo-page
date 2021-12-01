@@ -35,6 +35,10 @@ hr {
     margin: 0 auto;    
 }
 
+
+/* Intro */
+
+
 .intro {
     display: flex;
     flex-direction: column;
@@ -78,6 +82,10 @@ hr {
     color: #fff;
     font-family: 'Kaushan Script', cursive;
 }
+
+
+/* Header */
+
 
 .header {
     width: 100%;
@@ -139,6 +147,10 @@ hr {
     opacity: 1;
 }
 
+
+/* Intro */
+
+
 .btn {
     display: inline-block;
     vertical-align: top;
@@ -191,6 +203,10 @@ hr {
 
 }
 
+
+/* Sections */
+
+
 .section {
     padding: 80px 0;
 }
@@ -216,6 +232,17 @@ hr {
     padding-bottom: 0;
     margin-bottom: 40px;
 }
+
+.section--map {
+    padding: 40px 0;
+    width: 100%;
+    background-color: #e6e6e6;
+    background: url("img/map.svg") center no-repeat;
+}
+
+
+/* Section */
+
 
 .section_header {
     width: 100%;
@@ -252,6 +279,10 @@ hr {
     color: #999;
     font-size: 15px;
 }
+
+
+/* Cards */
+
 
 .card {
     display: flex;
@@ -324,6 +355,10 @@ hr {
     font-weight: 300;
 }
 
+
+/* Statistics */
+
+
 .statistics {
     background-color: #7cbaf4;
 }
@@ -356,6 +391,10 @@ hr {
     text-transform: uppercase;
 }
 
+
+/* Services */
+
+
 .services {
     display: flex;
 }
@@ -386,6 +425,10 @@ hr {
     counter-reset: #333;
 }
 
+
+/* Devices */
+
+
 .devices {
     width: 100%;
     max-width: 600px;
@@ -403,6 +446,10 @@ hr {
     right: 0;
     z-index: 1;
 }
+
+
+/* We do */
+
 
 .wedo {
     display: flex;
@@ -477,6 +524,10 @@ hr {
     text-transform: uppercase;
 }
 
+
+/* Reviews */
+
+
 .reviews {
     padding: 0 110px;
 } 
@@ -523,12 +574,10 @@ a {
 }
   
 a:hover {
-    /* background-color: #ddd; */
     color: black;
 }
   
 .previous {
-    /* background-color: #f1f1f1; */
     color: gray;
     float: left;
     font-size: 60px;
@@ -543,6 +592,10 @@ a:hover {
 .round {
     border-radius: 50%;
 }
+
+
+/* Social */
+
 
 .social {
     display: flex;
@@ -570,13 +623,20 @@ a:hover {
     color: white;
 }
 
+
+/* Logos */
+
+
 .logos {
     display: flex;
 }
 
+
+/* Works */
+
+
 .works {
     display: flex;
-
 }
 
 .works_col {
@@ -632,7 +692,9 @@ a:hover {
     font-style: italic;
 }
 
+
 /* Clients */
+
 
 .clients {
     display: flex;
@@ -687,14 +749,17 @@ a:hover {
     background-color: #f38181;
 }
 
+
 /* Blog */
+
 
 .blog {
     display: flex;
+    justify-content: space-between;
 }
 
 .blog_item {
-    width: 30%;
+    width: 31%;
 }
 
 .blog_header {
@@ -724,8 +789,13 @@ a:hover {
 
 .blog_date-day {
     font-size: 30px;
+    line-height: 1;
     font-weight: 700;
     font-style: normal;
+}
+
+.blog_content {
+    margin-bottom: 14px;
 }
 
 .blog_title {
@@ -742,7 +812,263 @@ a:hover {
 
 .blog_footer {
     border-top: 1px solid #e5e5e5;
+    padding-top: 14px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999;
 }
-/* 7 видео 14мин */
+
+.blog_stat_item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.blog_stat_item i {
+    color: #95e1d3;
+}
+
+
+/* Map */
+
+
+.map {
+    text-align: center;
+}
+
+.map_title {
+    font-size: 24px;
+    color: #f490bd;
+    font-weight: 700;
+}
+
+.map_title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.map_title a:hover {
+    text-decoration: underline;
+}
+
+.palocka_2 {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #f490bd;
+}
+
+
+/* Footer */
+
+
+.footer {
+    padding-top: 65px;
+    background-color: #f8f8f8;
+}
+
+.footer_inner {
+    display: flex;
+    padding-bottom: 65px;
+    justify-content: space-between;
+}
+
+.footer_col--first {
+    width: 40%;
+}
+
+.footer_col--second {
+    width: 29%;
+}
+
+.footer_col--third {
+    width: 22%;
+}
+
+.footer_logo {
+    margin-bottom: 30px;
+    font-size: 46px;
+    font-weight: 700;
+    color: #ccc;
+}
+
+.footer_text {
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+.footer_social {
+    margin-bottom: 25px;
+}
+
+.footer_social_header {
+    font-size: 14px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #333;  
+}
+
+.footer_social_header b {
+    font-size: 18px;  
+}
+
+.footer_social_content {
+    padding-top: 15px;
+    font-size: 15px;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.footer_social_content a {
+    color: #95e1d3;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer_title {
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+/* Blogs */
+
+
+.blogs_item {
+    display: flex;
+    align-items: center;
+}
+
+
+.blogs_comtent {
+    padding-left: 20px;
+}
+
+.blogs_title{
+    color: #333;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 5px;
+    line-height: 1.2;
+} 
+
+.blogs_title:hover {
+    text-decoration: underline;
+}
+
+.blogs_date {
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Subscribe */
+
+
+.subscribe {
+    width: 100%;
+    max-width: 380px;
+}
+
+.subscribe_input {
+    height: 40px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 12px;
+    color: #86e2d1;
+    font-style: italic;
+    border-right: 0;
+}
+
+.subscribe_input::placeholder {
+    color: #ccc;
+}
+
+.subscribe_btn {
+    height: 40px;
+    background-color: #95e1d3;
+    color: #fff;
+    padding: 12px 20px;
+    border: 0;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.subscribe_btn:hover {
+    background-color: #6ce0cb;
+}
+
+.subscribe_btn:focus {
+    outline: 0;
+}
+
+.subscribe_input:focus {
+    outline: 0;
+    border-color: #95e1d3;
+}
+
+
+/* Instagram */
+
+
+
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.instagram_item {
+    flex: 1 1 0;
+    width: 33%;
+    border:0;
+    margin:0;
+    padding:0;
+    float: left;
+    
+}
+
+.instagram_item img {
+    display: block;  
+    /* border: 1px solid #fff; */
+}
+
+/* copyright */
+
+
+.copyright {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(117, 114, 114);
+}
+
+.copyright span {
+    color:#f490bd;
+}
+
+
+
+
+
 
 
