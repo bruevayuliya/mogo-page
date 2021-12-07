@@ -95,7 +95,7 @@ hr {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .header_inner {
@@ -149,7 +149,7 @@ hr {
 }
 
 
-/* Intro */
+/* Slider */
 
 
 .btn {
@@ -174,7 +174,6 @@ hr {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
-
 }
 
 .slider_inner {
@@ -210,7 +209,7 @@ hr {
 
 .section {
     padding: 80px 0;
-}
+} 
 
 .section--devices {
     background: url("img/landscape.svg") center no-repeat;
@@ -221,6 +220,10 @@ hr {
 
 .section--gray {
     background-color: #f0eae9;
+}
+
+#section--gray_logos{
+    padding: 0;
 }
 
 .section--clients {
@@ -651,6 +654,21 @@ a:hover {
 
 .logos {
     display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    font-size: 80px;
+}
+
+.logos_item {
+    padding: 0 15px;
+}
+
+.logos_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding-left: 20px;
+
 }
 
 
@@ -895,6 +913,7 @@ a:hover {
 
 .footer_inner {
     display: flex;
+    flex-wrap: wrap;
     padding-bottom: 65px;
     justify-content: space-between;
 }
@@ -963,6 +982,10 @@ a:hover {
 
 
 /* Blogs */
+
+.blog {
+    flex-wrap: wrap;
+}
 
 
 .blogs_item {
@@ -1065,7 +1088,6 @@ a:hover {
     margin:0;
     padding:0;
     float: left;
-    
 }
 
 .instagram_item img {
@@ -1091,7 +1113,9 @@ a:hover {
 
 @media (max-width: 1230px) {
     /* Intro */
+
     .intro_suptitle{
+
         font-size: 52px;
     }
 
@@ -1099,7 +1123,12 @@ a:hover {
         font-size: 120px;
     }
 
+    .intro {
+        height: 1000px;
+    }
+
     /* Reviews */
+
     .reviews_text {
         font-size: 20px;
     }
@@ -1107,7 +1136,8 @@ a:hover {
 
 @media (max-width: 990px) {
     /* Intro */
-    .intro_suptitle{
+
+    .intro_suptitle {
         font-size: 32px;
     }
 
@@ -1115,7 +1145,12 @@ a:hover {
         font-size: 80px;
     }
 
+    .intro {
+        height: 800px;
+    }
+
     /*Stat */
+
     .stat {
         justify-content: center;
     }
@@ -1133,6 +1168,7 @@ a:hover {
     
 
     /* Services */
+
     .services_item {
         width: 50%;
         padding-bottom: 0;
@@ -1143,6 +1179,7 @@ a:hover {
     }
 
     /* Reviews */
+
     .reviews {
         padding-right: 60px;
     } 
@@ -1155,15 +1192,72 @@ a:hover {
     .reviews_item {
         padding-left: 175px;
     }
+
+    /* Clients */
+
+    .clients {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .clients_item {
+        width: 100%;
+    }
+
+    .clients_item:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Footer */
+
+    .footer_col--first {
+        width: 100%;
+    }
+
+    .footer_col--second {
+        width: 50%;
+    }
+
+    .footer_col--third {
+        width: 50%;
+    }
+
+    /* Instagram */
+
+    .instagram {
+        justify-content: flex-start;
+    }
+
+    .instagram_item {
+        width: auto;
+        border-right: 1px solid white ;
+    }
+    
 }
 
 @media (max-width: 770px) {
+
+    /* Intro */
+
+    .intro {
+        height: 700px;
+    }
+    .intro_suptitle {
+        margin-top: 70px;
+    }
+
+    .intro_inner {
+        margin:20px auto 50px;
+    }
+
     /* Nav */
+
     .nav {
         display: none;
     }
 
     /* Section */
+
     .section {
         padding: 40px 0;
     }
@@ -1173,6 +1267,7 @@ a:hover {
     }
 
     /* Card */
+
     .card {
         margin-top: 50px;
         justify-content: center;
@@ -1189,6 +1284,7 @@ a:hover {
     }
 
     /* Slider */
+
     .slider_text {
         display: none;
     }
@@ -1198,6 +1294,7 @@ a:hover {
     }
 
     /* Services */
+
     .services {
         justify-content: center;
     }
@@ -1212,6 +1309,7 @@ a:hover {
     }
 
     /* Wedo */
+
     .wedo_img {
         display: none;
     }
@@ -1221,6 +1319,7 @@ a:hover {
     }
 
     /* Reviews */
+
     .reviews_photo {
         display: block;
         position: static;
@@ -1238,11 +1337,70 @@ a:hover {
     .reviews_author {
         font-size: 20px;
     }
+
+    /* Logos */
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logos_item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .logos_img {
+        margin: 0 auto;
+        padding-left: 80px;
+    }
+
+    /* Works */
+
+    .works {
+        flex-wrap: wrap;
+    }
+
+    .works_col {
+        flex: none;
+        width: 50%;
+    }
+
+    /* Blog */
+
+    .blog {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .blog_item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .blog_item:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Footer */
+    .footer_col--first {
+        width: 100%;
+    }
+
+    .footer_col--second {
+        width: 100%;
+    }
+
+    .footer_col--third {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 575px) {
     /* Intro */
+
     .intro_suptitle {
+        margin-top: 70px;
         font-size: 22px;
     }
 
@@ -1250,7 +1408,12 @@ a:hover {
         font-size: 40px;
     }
 
+    .intro {
+        height: 600px;
+    }
+
     /* Section */
+
     .section_suptitle {
         font-size: 20px;
     }
@@ -1269,6 +1432,7 @@ a:hover {
     }
 
     /* Stat */
+
     .stat_item {
         width: 100%;
         border-bottom: 1px solid #e5e5e5;
@@ -1284,6 +1448,7 @@ a:hover {
     }
 
     /* Devices */
+
     .devices {
         max-width: 320px;
     }
@@ -1295,6 +1460,7 @@ a:hover {
     }
 
     /* Reviews */
+
     .reviews {
         padding-left: 40px;
         padding-right: 20px;
@@ -1304,6 +1470,61 @@ a:hover {
         margin: 0 auto 20px;
     }
 
+    /* Logos */
+
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logos_item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .logos_img {
+        margin: 0 auto;
+        padding-left: 60px;
+    }
+
+    
+    /* Works */
+
+    .works_image {
+        width: 100%;
+    }
+
+    
+    /* Clients */
+
+    .clients_photo {
+        position: static;
+        margin-left: 0;
+    }
+    
+    .clients_item {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .clients_text:before {
+        margin: 20px auto 20px;
+    }
+
+    /* Subscribe */
+
+    .subscribe {
+        flex-wrap: wrap;
+    }
+
+    .subscribe_input {
+        width: 100%;
+    }
+
+    .subscribe_btn {
+        width: 100%;
+    }
 }
 
 
