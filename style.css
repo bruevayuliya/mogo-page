@@ -3,7 +3,7 @@ font-family: 'Montserrat', sans-serif; */
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: #333;
     line-height: 1.6;
@@ -15,7 +15,12 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -33,7 +38,7 @@ hr {
     width: 100%;
     max-width: 1200px;
     padding: 0 15px;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 
 
@@ -123,8 +128,8 @@ hr {
 .logo {
     font-size: 30px;
     font-weight: 700;
-    color: #fff; 
-    font-family: 'Montserrat', sans-serif;  
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -244,7 +249,7 @@ hr {
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
-    transition: color .1s linear ;
+    transition: color .1s linear;
 }
 
 .btn:hover {
@@ -273,7 +278,7 @@ hr {
     text-transform: uppercase;
 }
 
-.slider_item.active{
+.slider_item.active {
     opacity: 1;
 }
 
@@ -292,7 +297,7 @@ hr {
 .section {
     padding: 80px 0;
     overflow: hidden;
-} 
+}
 
 .section--devices {
     background: url("img/landscape.svg") center no-repeat;
@@ -305,7 +310,7 @@ hr {
     background-color: #f0eae9;
 }
 
-#section--gray_logos{
+#section--gray_logos {
     padding: 0;
 }
 
@@ -381,7 +386,7 @@ hr {
 .card_item {
     width: 33.33333%;
     padding: 0 15px;
-}  
+}
 
 .card_inner {
     background-color: #7cbaf4;
@@ -392,7 +397,7 @@ hr {
     transform: translate3d(-10px, -10px, 0);
 }
 
-.card_inner:hover .card_image img{
+.card_inner:hover .card_image img {
     opacity: 0.3;
 }
 
@@ -572,24 +577,21 @@ hr {
     border: 1px solid #e5e5e5;
 }
 
-.accordion_item.active 
-.accordion_content {
+.accordion_item.active .accordion_content {
     display: block;
 }
 
-.accordion_item.active
-.accordion_header {
+.accordion_item.active .accordion_header {
     border-bottom-color: #e5e5e5;
 }
 
-.accordion_item.active
-.accordion_header:after {
+.accordion_item.active .accordion_header:after {
     transform: translateY(-50%) rotate(-45deg);
     margin-top: 5px;
 }
 
 .accordion_header {
-    padding: 15px 20px  15px 65px;
+    padding: 15px 20px 15px 65px;
     border-bottom: 3px solid transparent;
     position: relative;
     cursor: pointer;
@@ -638,7 +640,7 @@ hr {
 
 .reviews {
     padding: 0 110px;
-} 
+}
 
 .reviews_item {
     padding-left: 205px;
@@ -673,30 +675,30 @@ hr {
     height: 3px;
     background-color: #e5597c;
     margin-right: 10px;
-} 
+}
 
 a {
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
 }
-  
+
 a:hover {
     color: black;
 }
-  
+
 .previous {
     color: gray;
     float: left;
     font-size: 60px;
 }
-  
+
 .next {
     font-size: 60px;
     color: gray;
     float: right;
 }
-  
+
 .round {
     border-radius: 50%;
 }
@@ -772,8 +774,7 @@ a:hover {
     opacity: .1;
 }
 
-.works_item:hover 
-.works_info {
+.works_item:hover .works_info {
     opacity: 1;
 }
 
@@ -838,7 +839,7 @@ a:hover {
     left: 0;
     z-index: 1;
     margin-left: 50px;
-    
+
 }
 
 .clients_name {
@@ -1031,11 +1032,11 @@ a:hover {
     font-size: 14px;
     padding-bottom: 15px;
     border-bottom: 1px solid #e5e5e5;
-    color: #333;  
+    color: #333;
 }
 
 .footer_social_header b {
-    font-size: 18px;  
+    font-size: 18px;
 }
 
 .footer_social_content {
@@ -1078,14 +1079,14 @@ a:hover {
     padding-left: 20px;
 }
 
-.blogs_title{
+.blogs_title {
     color: #333;
     font-size: 12px;
     text-transform: uppercase;
     text-decoration: none;
     margin-top: 5px;
     line-height: 1.2;
-} 
+}
 
 .blogs_title:hover {
     text-decoration: underline;
@@ -1164,14 +1165,14 @@ a:hover {
 .instagram_item {
     flex: 1 1 0;
     width: 33%;
-    border:0;
-    margin:0;
-    padding:0;
+    border: 0;
+    margin: 0;
+    padding: 0;
     float: left;
 }
 
 .instagram_item img {
-    display: block;  
+    display: block;
     /* border: 1px solid #fff; */
 }
 
@@ -1187,14 +1188,14 @@ a:hover {
 }
 
 .copyright span {
-    color:#f490bd;
+    color: #f490bd;
 }
 
 
 @media (max-width: 1230px) {
     /* Intro */
 
-    .intro_suptitle{
+    .intro_suptitle {
 
         font-size: 52px;
     }
@@ -1239,7 +1240,7 @@ a:hover {
     .stat_item:last-child {
         border-right: 0;
     }
-    
+
 
     /* Services */
 
@@ -1256,7 +1257,7 @@ a:hover {
 
     .reviews {
         padding-right: 60px;
-    } 
+    }
 
     .reviews_photo {
         width: 120px;
@@ -1301,9 +1302,9 @@ a:hover {
 
     .instagram_item {
         width: auto;
-        border-right: 1px solid white ;
+        border-right: 1px solid white;
     }
-    
+
 }
 
 @media (max-width: 770px) {
@@ -1315,13 +1316,13 @@ a:hover {
     }
 
     .intro_inner {
-        margin:20px auto 50px;
+        margin: 20px auto 50px;
     }
 
     /* Nav */
 
     .nav {
-        display: none; 
+        display: none;
         width: 100%;
         position: absolute;
         top: 100%;
@@ -1461,7 +1462,7 @@ a:hover {
 
 @media (max-width: 575px) {
     /* Intro */
-    
+
     .intro_inner {
         max-width: 440px;
         margin-top: 0px;
@@ -1527,7 +1528,7 @@ a:hover {
     .reviews {
         padding-left: 40px;
         padding-right: 20px;
-    } 
+    }
 
     .reviews_photo {
         margin: 0 auto 20px;
@@ -1554,21 +1555,21 @@ a:hover {
         width: 100%;
     }
 
-    
+
     /* Works */
 
     .works_image {
         width: 100%;
     }
 
-    
+
     /* Clients */
 
     .clients_photo {
         position: static;
         margin-left: 0;
     }
-    
+
     .clients_item {
         padding-left: 0;
         padding-right: 0;
@@ -1607,10 +1608,3 @@ a:hover {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
