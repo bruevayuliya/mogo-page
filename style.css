@@ -34,6 +34,11 @@ hr {
     border: 0;
 }
 
+/* Page */
+.page {
+    overflow: hidden;
+}
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -54,6 +59,7 @@ hr {
     background: url("img/intro_1.svg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+    position: relative;
 }
 
 .intro_inner {
@@ -133,9 +139,15 @@ hr {
     margin-bottom: 10px;
 }
 
+/* nav */
+
 .nav {
     font-size: 15px;
     text-transform: uppercase;
+}
+
+.nav.active {
+    display: block;
 }
 
 .nav_link {
@@ -166,8 +178,12 @@ hr {
     color: #dae559;
 }
 
-.nav_link:hover:after {
+.nav_link:hover:after .nav__link.active:after {
     opacity: 1;
+}
+
+.nav__link.active {
+    color: #fce38a;
 }
 
 
@@ -188,6 +204,10 @@ hr {
     display: none;
 }
 
+.nav-toggle:focus {
+    outline: 0;
+}
+
 .nav-toggle_item {
     display: block;
     width: 100%;
@@ -199,6 +219,7 @@ hr {
     bottom: 0;
     right: 0;
     margin: auto;
+    transition: background .2s linear;
 }
 
 .nav-toggle.active .nav-toggle_item {
@@ -639,6 +660,10 @@ hr {
 
 
 .reviews {
+    position: relative;
+}
+
+.reviews .slick-slider {
     padding: 0 110px;
 }
 
@@ -677,31 +702,77 @@ hr {
     margin-right: 10px;
 }
 
-a {
+
+.slick-arrow {
+    display: block;
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-arrow:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+}
+
+.slick-prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.reviews__btn--next,
+.slick-next {
+    right: 0;
+    transform: rotate(135deg);
+}
+
+/* a {
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
+    border: 0;
+    background-color: none;
 }
 
 a:hover {
     color: black;
 }
 
-.previous {
+.previous,
+.slick-prev {
     color: gray;
     float: left;
     font-size: 60px;
 }
 
-.next {
+.next,
+.slick-next {
     font-size: 60px;
     color: gray;
     float: right;
 }
 
-.round {
+.round, 
+.slick-arrow {
     border-radius: 50%;
-}
+} */
 
 
 /* Social */

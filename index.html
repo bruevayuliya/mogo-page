@@ -8,10 +8,12 @@
     <script src="https://kit.fontawesome.com/97b7975f88.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Mogo</title>
 </head>
 
 <body>
+
 
 
     <!-- Header -->
@@ -20,14 +22,14 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header_inner">
-                <div class="logo">MoGo</div>
+                <div class="logo" data-scroll="#intro">MoGo</div>
 
-                <nav class="nav">
-                    <a class="nav_link active" href="#">About</a>
-                    <a class="nav_link" href="#">Service</a>
-                    <a class="nav_link" href="#">Blog</a>
-                    <a class="nav_link" href="#">Work</a>
-                    <a class="nav_link" href="#">Contact</a>
+                <nav class="nav" id="nav">
+                    <a class="nav_link" href="#" data-scroll="#about">About</a>
+                    <a class="nav_link" href="#" data-scroll="#devices">Service</a>
+                    <a class="nav_link" href="#" data-scroll="#blog">Blog</a>
+                    <a class="nav_link" href="#" data-scroll="#works">Work</a>
+                    <a class="nav_link" href="#" data-scroll="#footer">Contact</a>
                     <a class="nav_link" href="#">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
@@ -37,7 +39,7 @@
 
                 </nav>
 
-                <button class="nav-toggle" type="button">
+                <button class="nav-toggle" id="nav_toggle" type="button">
                     <span class="nav-toggle_item">Menu</span>
                 </button>
 
@@ -45,878 +47,931 @@
         </div>
     </header>
 
+    <div class="page">
+        <!-- intro -->
 
-    <!-- intro -->
 
-
-    <div class="intro" id="intro">
-        <div class="container">
-            <div class="intro_inner">
-                <h2 class="intro_suptitle">Creative Template</h2>
-                <h1 class="intro_title">Welcome to MoGo</h1>
-                <div class="palocka"></div>
-                <a class="btn" href="#">Learn More</a>
-            </div>
-            <div class="slider">
-                <div class="container">
-                    <div class="slider_inner">
-                        <div class="slider_item active">
-                            <span class="slider_num">01</span>
-                            <span class="slider_text">Intro</span>
-                        </div>
-                        <div class="slider_item">
-                            <span class="slider_num">02</span>
-                            <span class="slider_text">Work</span>
-                        </div>
-                        <div class="slider_item">
-                            <span class="slider_num">03</span>
-                            <span class="slider_text">About</span>
-                        </div>
-                        <div class="slider_item">
-                            <span class="slider_num">04</span>
-                            <span class="slider_text">Contacts</span>
-                        </div>
-                    </div>
+        <div class="intro" id="intro">
+            <div class="container">
+                <div class="intro_inner">
+                    <h2 class="intro_suptitle">Creative Template</h2>
+                    <h1 class="intro_title">Welcome to MoGo</h1>
+                    <div class="palocka"></div>
+                    <a class="btn" href="#">Learn More</a>
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Section Cards -->
-
-
-    <section class="section">
-
-        <div class="container">
-            <div class="section_header">
-                <h3 class="section_suptitle">What we do</h3>
-                <h2 class="section_title">Story about us</h2>
-                <div class="palocka_2"></div>
-                <div class="section_text">
-                    <p>Unfortunately, About Us pages are often treated as an obligation rather than an opportunity to
-                        build trust, tell your story, and share what makes you, you.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_item">
-                    <div class="card_inner">
-                        <div class="card_image">
-                            <img src="img/image_1.svg">
-                        </div>
-                        <div class="card_text">Super team</div>
-                    </div>
-                </div>
-
-                <div class="card_item">
-                    <div class="card_inner">
-                        <div class="card_image">
-                            <img src="img/image_2.svg">
-                        </div>
-                        <div class="card_text">Love everywhere</div>
-                    </div>
-                </div>
-
-                <div class="card_item">
-                    <div class="card_inner">
-                        <div class="card_image">
-                            <img src="img/image_3.svg">
-                        </div>
-                        <div class="card_text">I love You</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- Statistics -->
-
-
-    <div class="statistics">
-        <div class="container">
-            <div class="stat">
-                <div class="stat_item">
-                    <div class="stat_count">42</div>
-                    <div class="stat_text">web design projects</div>
-                </div>
-                <div class="stat_item">
-                    <div class="stat_count">123</div>
-                    <div class="stat_text">happy client</div>
-                </div>
-                <div class="stat_item">
-                    <div class="stat_count">15</div>
-                    <div class="stat_text">award winner</div>
-                </div>
-                <div class="stat_item">
-                    <div class="stat_count">99</div>
-                    <div class="stat_text">cup of coffee</div>
-                </div>
-                <div class="stat_item">
-                    <div class="stat_count">24</div>
-                    <div class="stat_text">members</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Section -->
-
-
-    <section class="section">
-
-        <div class="container">
-            <div class="section_header">
-                <h3 class="section_suptitle">We work with</h3>
-                <h2 class="section_title">Amazing services</h2>
-                <div class="palocka_2"></div>
-            </div>
-
-            <!-- Services -->
-
-            <div class="services">
-                <div class="services_item services_item--border">
-                    <img class="services_icon" src="img/services_1.svg">
-                    <div class="services_title">Photography</div>
-                    <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions are
-                        comprehensive</div>
-                </div>
-
-                <div class="services_item services_item--border">
-                    <img class="services_icon" src="img/services_2.svg">
-                    <div class="services_title">Web Disign</div>
-                    <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions are
-                        comprehensive</div>
-                </div>
-
-                <div class="services_item services_item--border">
-                    <img class="services_icon" src="img/services_3.svg">
-                    <div class="services_title">Creativity</div>
-                    <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions are
-                        comprehensive</div>
-                </div>
-
-                <div class="services_item">
-                    <img class="services_icon" src="img/services_4.svg">
-                    <div class="services_title">Seo</div>
-                    <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions are
-                        comprehensive</div>
-                </div>
-
-                <div class="services_item">
-                    <img class="services_icon" src="img/services_5.svg">
-                    <div class="services_title">CSS/HTML</div>
-                    <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions are
-                        comprehensive</div>
-                </div>
-
-                <div class="services_item">
-                    <img class="services_icon" src="img/services_6.svg">
-                    <div class="services_title">Digital</div>
-                    <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions are
-                        comprehensive</div>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-    </section>
-
-
-    <!-- Section--devices -->
-
-
-    <section class="section section--devices">
-
-        <div class="container">
-            <div class="section_header">
-                <h3 class="section_suptitle">For all devices</h3>
-                <h2 class="section_title">Unique design</h2>
-                <div class="palocka_2"></div>
-            </div>
-
-            <div class="devices">
-                <img class="devices_item" src="img/tablet.svg">
-                <img class="devices_item devices_item--phone" src="img/telephone.svg">
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Section -->
-
-
-    <section class="section">
-        <div class="container">
-
-            <div class="section_header">
-                <h3 class="section_suptitle">Service</h3>
-                <h2 class="section_title">What we do</h2>
-                <div class="palocka_2"></div>
-                <div class="section_text">
-                    <p>Unfortunately, About Us pages are often treated as an obligation rather than an opportunity to
-                        build trust, tell your story, and share what makes you, you.</p>
-                </div>
-            </div>
-
-
-            <!-- We do -->
-
-
-            <div class="wedo">
-                <div class="wedo_item">
-                    <img class="wedo_img" src="img/human.svg">
-                </div>
-
-                <div class="wedo_item">
-                    <div class="accordion">
-                        <div class="accordion_item">
-                            <div class="accordion_header">
-                                <img class="accordion_icon" src="img/picture.svg">
-                                <div class="accordion_title">Photography</div>
+                <div class="slider">
+                    <div class="container">
+                        <div class="slider_inner">
+                            <div class="slider_item active">
+                                <span class="slider_num">01</span>
+                                <span class="slider_text">Intro</span>
                             </div>
-                            <div class="accordion_content">
-                                <p>
+                            <div class="slider_item">
+                                <span class="slider_num">02</span>
+                                <span class="slider_text">Work</span>
+                            </div>
+                            <div class="slider_item">
+                                <span class="slider_num">03</span>
+                                <span class="slider_text">About</span>
+                            </div>
+                            <div class="slider_item">
+                                <span class="slider_num">04</span>
+                                <span class="slider_text">Contacts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Section Cards -->
+
+
+        <section class="section" id="about">
+
+            <div class="container">
+                <div class="section_header">
+                    <h3 class="section_suptitle">What we do</h3>
+                    <h2 class="section_title">Story about us</h2>
+                    <div class="palocka_2"></div>
+                    <div class="section_text">
+                        <p>Unfortunately, About Us pages are often treated as an obligation rather than an opportunity
+                            to
+                            build trust, tell your story, and share what makes you, you.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_item">
+                        <div class="card_inner">
+                            <div class="card_image">
+                                <img src="img/image_1.svg">
+                            </div>
+                            <div class="card_text">Super team</div>
+                        </div>
+                    </div>
+
+                    <div class="card_item">
+                        <div class="card_inner">
+                            <div class="card_image">
+                                <img src="img/image_2.svg">
+                            </div>
+                            <div class="card_text">Love everywhere</div>
+                        </div>
+                    </div>
+
+                    <div class="card_item">
+                        <div class="card_inner">
+                            <div class="card_image">
+                                <img src="img/image_3.svg">
+                            </div>
+                            <div class="card_text">I love You</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Statistics -->
+
+
+        <div class="statistics">
+            <div class="container">
+                <div class="stat">
+                    <div class="stat_item">
+                        <div class="stat_count">42</div>
+                        <div class="stat_text">web design projects</div>
+                    </div>
+                    <div class="stat_item">
+                        <div class="stat_count">123</div>
+                        <div class="stat_text">happy client</div>
+                    </div>
+                    <div class="stat_item">
+                        <div class="stat_count">15</div>
+                        <div class="stat_text">award winner</div>
+                    </div>
+                    <div class="stat_item">
+                        <div class="stat_count">99</div>
+                        <div class="stat_text">cup of coffee</div>
+                    </div>
+                    <div class="stat_item">
+                        <div class="stat_count">24</div>
+                        <div class="stat_text">members</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Section -->
+
+
+        <section class="section" id="#devices">
+
+            <div class="container">
+                <div class="section_header">
+                    <h3 class="section_suptitle">We work with</h3>
+                    <h2 class="section_title">Amazing services</h2>
+                    <div class="palocka_2"></div>
+                </div>
+
+                <!-- Services -->
+
+                <div class="services">
+                    <div class="services_item services_item--border">
+                        <img class="services_icon" src="img/services_1.svg">
+                        <div class="services_title">Photography</div>
+                        <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions
+                            are
+                            comprehensive</div>
+                    </div>
+
+                    <div class="services_item services_item--border">
+                        <img class="services_icon" src="img/services_2.svg">
+                        <div class="services_title">Web Disign</div>
+                        <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions
+                            are
+                            comprehensive</div>
+                    </div>
+
+                    <div class="services_item services_item--border">
+                        <img class="services_icon" src="img/services_3.svg">
+                        <div class="services_title">Creativity</div>
+                        <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions
+                            are
+                            comprehensive</div>
+                    </div>
+
+                    <div class="services_item">
+                        <img class="services_icon" src="img/services_4.svg">
+                        <div class="services_title">Seo</div>
+                        <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions
+                            are
+                            comprehensive</div>
+                    </div>
+
+                    <div class="services_item">
+                        <img class="services_icon" src="img/services_5.svg">
+                        <div class="services_title">CSS/HTML</div>
+                        <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions
+                            are
+                            comprehensive</div>
+                    </div>
+
+                    <div class="services_item">
+                        <img class="services_icon" src="img/services_6.svg">
+                        <div class="services_title">Digital</div>
+                        <div class="services_text">From grammar and spelling to style and tone, Grammarly’s suggestions
+                            are
+                            comprehensive</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+
+        <!-- Section--devices -->
+
+
+        <section class="section section--devices">
+
+            <div class="container">
+                <div class="section_header">
+                    <h3 class="section_suptitle">For all devices</h3>
+                    <h2 class="section_title">Unique design</h2>
+                    <div class="palocka_2"></div>
+                </div>
+
+                <div class="devices">
+                    <img class="devices_item" src="img/tablet.svg">
+                    <img class="devices_item devices_item--phone" src="img/telephone.svg">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Section -->
+
+
+        <section class="section">
+            <div class="container">
+
+                <div class="section_header">
+                    <h3 class="section_suptitle">Service</h3>
+                    <h2 class="section_title">What we do</h2>
+                    <div class="palocka_2"></div>
+                    <div class="section_text">
+                        <p>Unfortunately, About Us pages are often treated as an obligation rather than an opportunity
+                            to
+                            build trust, tell your story, and share what makes you, you.</p>
+                    </div>
+                </div>
+
+
+                <!-- We do -->
+
+
+                <div class="wedo">
+                    <div class="wedo_item">
+                        <img class="wedo_img" src="img/human.svg">
+                    </div>
+
+                    <div class="wedo_item">
+                        <div class="accordion">
+                            <div class="accordion_item" data-collapse="#wedo_1">
+                                <div class="accordion_header">
+                                    <img class="accordion_icon" src="img/picture.svg">
+                                    <div class="accordion_title">Photography</div>
+                                </div>
+                                <div class="accordion_content" id="#wedo_1">
+                                    <p>
+                                        Equal rights and opportunities between men and women and the objective of
+                                        ensuring
+                                        active participation of women in all areas of national endeavour are priority
+                                        tasks.
+                                        From grammar and spelling to style and tone, Grammarly’s suggestions are
+                                        comprehensive
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion_item active" data-collapse="#wedo_2">
+                                <div class="accordion_header">
+                                    <img class="accordion_icon" src="img/palocki.svg">
+                                    <div class="accordion_title">Creativity</div>
+                                </div>
+                                <div class="accordion_content" id="#wedo_2">
+                                    <p>
+                                        Equal rights and opportunities between men and women and the objective of
+                                        ensuring
+                                        active participation of women in all areas of national endeavour are priority
+                                        tasks.
+                                        From grammar and spelling to style and tone, Grammarly’s suggestions are
+                                        comprehensive
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion_item" data-collapse="#wedo_3">
+                                <div class="accordion_header">
+                                    <img class="accordion_icon" src="img/circle.svg">
+                                    <div class="accordion_title">Web design</div>
+                                </div>
+                                <div class="accordion_content" id="#wedo_3">
+                                    <p>
+                                        Equal rights and opportunities between men and women and the objective of
+                                        ensuring
+                                        active participation of women in all areas of national endeavour are priority
+                                        tasks.
+                                        From grammar and spelling to style and tone, Grammarly’s suggestions are
+                                        comprehensive
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section--gray -->
+
+
+        <div class="section section--gray">
+            <div class="container">
+
+                <!-- <a href="#" class="previous round">&#8249;</a>
+            <a href="#" class="next round">&#8250;</a> -->
+
+
+                <!-- Reviews -->
+
+
+                <div class="reviews">
+                    <div data-slider>
+                        <div>
+                            <div class="reviews_item">
+                                <img class="reviews_photo" src="http://placehold.it/145">
+                                <div class="reviews_text">
                                     Equal rights and opportunities between men and women and the objective of ensuring
-                                    active participation of women in all areas of national endeavour are priority tasks.
+                                    active
+                                    participation of women in all areas of national endeavour are priority tasks.
+                                </div>
+                                <div class="reviews_author">Jon Dog</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="reviews_item">
+                                <img class="reviews_photo" src="http://placehold.it/145">
+                                <div class="reviews_text">
                                     From grammar and spelling to style and tone, Grammarly’s suggestions are
                                     comprehensive
-                                </p>
+                                </div>
+                                <div class="reviews_author">Jack Cap</div>
                             </div>
                         </div>
 
-                        <div class="accordion_item active">
-                            <div class="accordion_header">
-                                <img class="accordion_icon" src="img/palocki.svg">
-                                <div class="accordion_title">Creativity</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Section -->
+
+
+        <section class="section">
+            <div class="container">
+
+                <div class="section_header">
+
+                    <h3 class="section_suptitle">Who we are</h3>
+                    <h2 class="section_title">Meet our team</h2>
+                    <div class="palocka_2"></div>
+                    <div class="section_text">
+                        <p>Unfortunately, About Us pages are often treated as an obligation rather than an opportunity
+                            to
+                            build trust, tell your story, and share what makes you, you.</p>
+                    </div>
+                </div>
+
+
+                <!-- Card -->
+
+
+                <div class="card">
+                    <div class="card_item">
+                        <div class="card_inner">
+                            <div class="card_image">
+                                <img src="img/human_1.svg">
                             </div>
-                            <div class="accordion_content">
-                                <p>
-                                    Equal rights and opportunities between men and women and the objective of ensuring
-                                    active participation of women in all areas of national endeavour are priority tasks.
-                                    From grammar and spelling to style and tone, Grammarly’s suggestions are
-                                    comprehensive
-                                </p>
+                            <div class="card_text">
+                                <div class="social">
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <div class="card_info">
+                            <div class="card_name">Matthew Dix</div>
+                            <div class="card_prof">Graphic Design</div>
+                        </div>
+                    </div>
 
-                        <div class="accordion_item">
-                            <div class="accordion_header">
-                                <img class="accordion_icon" src="img/circle.svg">
-                                <div class="accordion_title">Web design</div>
+                    <div class="card_item">
+                        <div class="card_inner">
+                            <div class="card_image">
+                                <img src="img/human_2.svg">
                             </div>
-                            <div class="accordion_content">
-                                <p>
-                                    Equal rights and opportunities between men and women and the objective of ensuring
-                                    active participation of women in all areas of national endeavour are priority tasks.
-                                    From grammar and spelling to style and tone, Grammarly’s suggestions are
-                                    comprehensive
-                                </p>
+                            <div class="card_text">
+                                <div class="social">
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+                        <div class="card_info">
+                            <div class="card_name">Christopher Campbell</div>
+                            <div class="card_prof">Manager</div>
+                        </div>
+                    </div>
 
+                    <div class="card_item">
+                        <div class="card_inner">
+                            <div class="card_image">
+                                <img src="img/human_3.svg">
+                            </div>
+                            <div class="card_text">
+                                <div class="social">
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                    <a class="social_item" href="#" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_info">
+                            <div class="card_name">Mitchael Fertig</div>
+                            <div class="card_prof">Developer</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Section--gray -->
+
+
+        <div id="section--gray_logos" class="section section--gray">
+            <div class="container">
+
+                <div class="logos">
+                    <div class="logos_item">
+                        <div class="logos_img"><i class="fab fa-git-square"></i></div>
+                    </div>
+                    <div class="logos_item">
+                        <div class="logos_img"><i class="fab fa-css3-alt"></i></div>
+                    </div>
+                    <div class="logos_item">
+                        <div class="logos_img"><i class="fas fa-code"></i></div>
+                    </div>
+                    <div class="logos_item">
+                        <div class="logos_img"><i class="fab fa-js"></i></div>
+                    </div>
+                    <div class="logos_item">
+                        <div class="logos_img"><i class="fab fa-react"></i></div>
+                    </div>
+                    <div class="logos_item">
+                        <div class="logos_img"><i class="fab fa-angular"></i></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Section -->
+
+
+        <section class="section" id="works">
+            <div class="container">
+                <div class="section_header">
+
+                    <h3 class="section_suptitle">What we do</h3>
+                    <h2 class="section_title">Some of our work</h2>
+                    <div class="palocka_2"></div>
+                    <div class="section_text">
+                        <p>Unfortunately, About Us pages are often treated as an obligation rather than an opportunity
+                            to
+                            build trust, tell your story, and share what makes you, you.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Works -->
+
+
+            <div class="works">
+                <div class="works_col">
+                    <div class="works_item">
+                        <img class="works_image" src="img/work_1.svg">
+                        <div class="works_info">
+                            <div class="works_title">Creative</div>
+                            <div class="works_text">Nice to meet you</div>
+                        </div>
+                    </div>
+                    <div class="works_item">
+                        <img class="works_image" src="img/work_5.svg">
+                        <div class="works_info">
+                            <div class="works_title">Creative</div>
+                            <div class="works_text">Nice to meet you</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_col">
+                    <div class="works_item">
+                        <img class="works_image" src="img/work_2.svg">
+                        <div class="works_info">
+                            <div class="works_title">Creative</div>
+                            <div class="works_text">Nice to meet you</div>
+                        </div>
+                    </div>
+                    <div class="works_item">
+                        <img class="works_image" src="img/work_6.svg">
+                        <div class="works_info">
+                            <div class="works_title">Creative</div>
+                            <div class="works_text">Nice to meet you</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_col">
+                    <div class="works_item">
+                        <img class="works_image" src="img/work_3.svg">
+                        <div class="works_info">
+                            <div class="works_title">Creative</div>
+                            <div class="works_text">Nice to meet you</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="works_col">
+                    <div class="works_item">
+                        <img class="works_image" src="img/work_4.svg">
+                        <div class="works_info">
+                            <div class="works_title">Creative</div>
+                            <div class="works_text">Nice to meet you</div>
+                        </div>
+                    </div>
+                    <div class="works_item">
+                        <img class="works_image" src="img/work_7.svg">
+                        <div class="works_info">
+                            <div class="works_title">Creative</div>
+                            <div class="works_text">Nice to meet you</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Section previos/next-->
+
+
+        <div class="section">
+            <div class="container">
+
+                <a href="#" class="previous round">&#8249;</a>
+                <a href="#" class="next round">&#8250;</a>
+
+                <div class="reviews">
+
+                    <div class="reviews_item">
+                        <img class="reviews_photo" src="img/girl.svg">
+                        <div class="reviews_text">
+                            Equal rights and opportunities between men and women and the objective of ensuring active
+                            participation of women in all areas of national endeavour are priority tasks.
+                        </div>
+                        <div class="reviews_author">Jon Dog</div>
                     </div>
                 </div>
 
             </div>
         </div>
-    </section>
-
-    <!-- Section--gray -->
 
 
-    <div class="section section--gray">
-        <div class="container">
-
-            <a href="#" class="previous round">&#8249;</a>
-            <a href="#" class="next round">&#8250;</a>
+        <!-- Section--clients -->
 
 
-            <!-- Reviews -->
+        <section class="section section--clients">
+            <div class="container">
+                <div class="section_header">
 
-
-            <div class="reviews">
-
-                <div class="reviews_item">
-                    <img class="reviews_photo" src="http://placehold.it/145">
-                    <div class="reviews_text">
-                        Equal rights and opportunities between men and women and the objective of ensuring active
-                        participation of women in all areas of national endeavour are priority tasks.
-                    </div>
-                    <div class="reviews_author">Jon Dog</div>
+                    <h3 class="section_suptitle">Happy clients</h3>
+                    <h2 class="section_title">What people say</h2>
+                    <div class="palocka_2"></div>
                 </div>
-            </div>
 
-        </div>
-    </div>
-
-
-    <!-- Section -->
-
-
-    <section class="section">
-        <div class="container">
-
-            <div class="section_header">
-
-                <h3 class="section_suptitle">Who we are</h3>
-                <h2 class="section_title">Meet our team</h2>
-                <div class="palocka_2"></div>
-                <div class="section_text">
-                    <p>Unfortunately, About Us pages are often treated as an obligation rather than an opportunity to
-                        build trust, tell your story, and share what makes you, you.</p>
-                </div>
-            </div>
-
-
-            <!-- Card -->
-
-
-            <div class="card">
-                <div class="card_item">
-                    <div class="card_inner">
-                        <div class="card_image">
-                            <img src="img/human_1.svg">
+                <div class="clients">
+                    <div class="clients_item">
+                        <img class="clients_photo" src="img/1.svg">
+                        <div class="clients_content">
+                            <div class="clients_name">Matthew Dix</div>
+                            <div class="clients_prof">Graphic Design</div>
+                            <div class="clients_text">Equal rights and opportunities between men and women and the
+                                objective
+                                of ensuring active participation of women in all areas of national endeavour are
+                                priority
+                                tasks.</div>
                         </div>
-                        <div class="card_text">
-                            <div class="social">
-                                <a class="social_item" href="#" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="clients_item">
+                        <img class="clients_photo" src="img/2.svg">
+                        <div class="clients_content">
+                            <div class="clients_name">Matthew Dix</div>
+                            <div class="clients_prof">Graphic Design</div>
+                            <div class="clients_text">Equal rights and opportunities between men and women and the
+                                objective
+                                of ensuring active participation of women in all areas of national endeavour are
+                                priority
+                                tasks.</div>
+                        </div>
+                    </div>
+                    <div class="clients_item">
+                        <img class="clients_photo" src="img/3.svg">
+                        <div class="clients_content">
+                            <div class="clients_name">Matthew Dix</div>
+                            <div class="clients_prof">Graphic Design</div>
+                            <div class="clients_text">Equal rights and opportunities between men and women and the
+                                objective
+                                of ensuring active participation of women in all areas of national endeavour are
+                                priority
+                                tasks.</div>
+                        </div>
+                    </div>
+                    <div class="clients_item">
+                        <img class="clients_photo" src="img/4.svg">
+                        <div class="clients_content">
+                            <div class="clients_name">Matthew Dix</div>
+                            <div class="clients_prof">Graphic Design</div>
+                            <div class="clients_text">Equal rights and opportunities between men and women and the
+                                objective
+                                of ensuring active participation of women in all areas of national endeavour are
+                                priority
+                                tasks.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Section Blog -->
+
+
+        <section class="section" id="#blog">
+            <div class="container">
+                <div class="section_header">
+
+                    <h3 class="section_suptitle">Our stories</h3>
+                    <h2 class="section_title">Latest blog</h2>
+                    <div class="palocka_2"></div>
+                </div>
+
+                <div class="blog">
+                    <div class="blog_item">
+                        <div class="blog_header">
+                            <img class="blog_photo" src="img/blog_1.svg">
+                            <div class="blog_date">
+                                <div class="blog_date-day">15</div>
+                                Jan
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="blog_title"> What do you mean</div>
+                            <div class="blog_text">Equal rights and opportunities between men and women and the
+                                objective of
+                                ensuring active participation of women in all areas of national endeavour are priority
+                                tasks.</div>
+                        </div>
+                        <div class="blog_footer">
+                            <div class="blog_stat">
+
+                                <span class="blog_stat_item">
+                                    <i class="far fa-eye"></i>542</span>
+                                <span class="blog_stat_item">
+                                    <i class="far fa-comment-dots"></i>17</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="blog_item">
+                        <div class="blog_header">
+                            <img class="blog_photo" src="img/blog_2.svg">
+                            <div class="blog_date">
+                                <div class="blog_date-day">15</div>
+                                Jan
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="blog_title"> What do you mean</div>
+                            <div class="blog_text">Equal rights and opportunities between men and women and the
+                                objective of
+                                ensuring active participation of women in all areas of national endeavour are priority
+                                tasks.</div>
+                        </div>
+                        <div class="blog_footer">
+                            <div class="blog_stat">
+
+                                <span class="blog_stat_item">
+                                    <i class="far fa-eye"></i>542</span>
+                                <span class="blog_stat_item">
+                                    <i class="far fa-comment-dots"></i>17</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="blog_item">
+                        <div class="blog_header">
+                            <img class="blog_photo" src="img/blog_3.svg">
+                            <div class="blog_date">
+                                <div class="blog_date-day">15</div>
+                                Jan
+                            </div>
+                        </div>
+                        <div class="blog_content">
+                            <div class="blog_title"> What do you mean</div>
+                            <div class="blog_text">Equal rights and opportunities between men and women and the
+                                objective of
+                                ensuring active participation of women in all areas of national endeavour are priority
+                                tasks.</div>
+                        </div>
+                        <div class="blog_footer">
+                            <div class="blog_stat">
+
+                                <span class="blog_stat_item">
+                                    <i class="far fa-eye"></i>542</span>
+                                <span class="blog_stat_item">
+                                    <i class="far fa-comment-dots"></i>17</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Section Map -->
+
+
+        <section class="section section--map">
+            <div class="container">
+
+                <div class="map">
+                    <h2 class="map_title">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <a href="https://goo.gl/maps/Rh5UGUaotNHV3ycSA" target="_blank">Open Map</a>
+                    </h2>
+                    <div class="palocka_2"></div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+
+
+        <footer class="footer" id="footer">
+            <div class="container">
+
+                <div class="footer_inner">
+                    <div class="footer_col footer_col--first">
+                        <div class="footer_logo">MoGo</div>
+                        <div class="footer_text">Equal rights and opportunities between men and women and the objective
+                            of
+                            ensuring active participation of women in all areas of national endeavour are priority
+                            tasks.
+                        </div>
+
+                        <div class="footer_social">
+                            <div class="footer_social_header">
+                                <b>15k</b> followers
+                            </div>
+                            <div class="footer_social_content">
+                                Follow us:
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook"></i>
                                 </a>
-                                <a class="social_item" href="#" target="_blank">
+                                <a href="#" target="_blank">
                                     <i class="fab fa-twitter"></i>
                                 </a>
-                                <a class="social_item" href="#" target="_blank">
-                                    <i class="fab fa-pinterest-p"></i>
-                                </a>
-                                <a class="social_item" href="#" target="_blank">
+                                <a href="#" target="_blank">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
                         </div>
+
+                        <form class="subscribe" action="/" method="post">
+                            <input class="subscribe_input" type="email" name="name" placeholder="Your email...">
+                            <button class="subscribe_btn" type="submit">Subscribe</button>
+                        </form>
+
                     </div>
-                    <div class="card_info">
-                        <div class="card_name">Matthew Dix</div>
-                        <div class="card_prof">Graphic Design</div>
+
+                    <div class="footer_col footer_col--second">
+                        <div class="footer_title">Blogs</div>
+
+                        <div class="blogs">
+                            <div class="blogs_item">
+                                <img class="blogs_img" src="img/blogs_1.svg">
+
+                                <div class="blogs_content">
+                                    <a class="blogs_title" href="">Lorem inspum dolor sit asset, consetration
+                                        adolop.</a>
+                                    <div class="blogs_date">Dec 01, 2021</div>
+                                </div>
+
+                            </div>
+
+                            <div class="blogs_item">
+                                <img class="blogs_img" src="img/blogs_2.svg">
+
+                                <div class="blogs_content">
+                                    <a class="blogs_title" href="">Lorem inspum dolor sit asset, consetration
+                                        adolop.</a>
+                                    <div class="blogs_date">Dec 01, 2021</div>
+                                </div>
+
+                            </div>
+
+                            <div class="blogs_item">
+                                <img class="blogs_img" src="img/blogs_3.svg">
+
+                                <div class="blogs_content">
+                                    <a class="blogs_title" href="">Lorem inspum dolor sit asset, consetration
+                                        adolop.</a>
+                                    <div class="blogs_date">Dec 01, 2021</div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
                     </div>
+                    <div class="footer_col footer_col--third">
+                        <div class="footer_title">Instagram</div>
+
+                        <div class="instagram">
+                            <a class="instagram_item" href="" target="_blank">
+                                <img class="instagram_img" src="img/inst_1.svg">
+                            </a>
+                            <a class="instagram_item" href="" target="_blank">
+                                <img class="instagram_img" src="img/inst_2.svg">
+                            </a>
+                            <a class="instagram_item" href="" target="_blank">
+                                <img class="instagram_img" src="img/inst_3.svg">
+                            </a>
+                            <a class="instagram_item" href="" target="_blank">
+                                <img class="instagram_img" src="img/inst_4.svg">
+                            </a>
+                            <a class="instagram_item" href="" target="_blank">
+                                <img class="instagram_img" src="img/inst_5.svg">
+                            </a>
+                            <a class="instagram_item" href="" target="_blank">
+                                <img class="instagram_img" src="img/inst_6.svg">
+                            </a>
+                            <a class="instagram_item" href="" target="_blank">
+                                <img class="instagram_img" src="img/inst_7.svg">
+                            </a>
+                            <a class="instagram_item" href="" target="_blank">
+                                <img class="instagram_img" src="img/inst_8.svg">
+                            </a>
+                            <a class="instagram_item" href="" target="_blank">
+                                <img class="instagram_img" src="img/inst_9.svg">
+                            </a>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="card_item">
-                    <div class="card_inner">
-                        <div class="card_image">
-                            <img src="img/human_2.svg">
-                        </div>
-                        <div class="card_text">
-                            <div class="social">
-                                <a class="social_item" href="#" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a class="social_item" href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a class="social_item" href="#" target="_blank">
-                                    <i class="fab fa-pinterest-p"></i>
-                                </a>
-                                <a class="social_item" href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_info">
-                        <div class="card_name">Christopher Campbell</div>
-                        <div class="card_prof">Manager</div>
-                    </div>
-                </div>
 
-                <div class="card_item">
-                    <div class="card_inner">
-                        <div class="card_image">
-                            <img src="img/human_3.svg">
-                        </div>
-                        <div class="card_text">
-                            <div class="social">
-                                <a class="social_item" href="#" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a class="social_item" href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a class="social_item" href="#" target="_blank">
-                                    <i class="fab fa-pinterest-p"></i>
-                                </a>
-                                <a class="social_item" href="#" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card_info">
-                        <div class="card_name">Mitchael Fertig</div>
-                        <div class="card_prof">Developer</div>
-                    </div>
+                <!-- Copyright -->
+
+                <div class="copyright">
+                    2021 MoGo site by <span>Yuliya</span>
                 </div>
             </div>
+        </footer>
 
-        </div>
-
-    </section>
-
-
-    <!-- Section--gray -->
-
-
-    <div id="section--gray_logos" class="section section--gray">
-        <div class="container">
-
-            <div class="logos">
-                <div class="logos_item">
-                    <div class="logos_img"><i class="fab fa-git-square"></i></div>
-                </div>
-                <div class="logos_item">
-                    <div class="logos_img"><i class="fab fa-css3-alt"></i></div>
-                </div>
-                <div class="logos_item">
-                    <div class="logos_img"><i class="fas fa-code"></i></div>
-                </div>
-                <div class="logos_item">
-                    <div class="logos_img"><i class="fab fa-js"></i></div>
-                </div>
-                <div class="logos_item">
-                    <div class="logos_img"><i class="fab fa-react"></i></div>
-                </div>
-                <div class="logos_item">
-                    <div class="logos_img"><i class="fab fa-angular"></i></div>
-                </div>
-
-            </div>
-
-        </div>
     </div>
-
-
-    <!-- Section -->
-
-
-    <section class="section">
-        <div class="container">
-            <div class="section_header">
-
-                <h3 class="section_suptitle">What we do</h3>
-                <h2 class="section_title">Some of our work</h2>
-                <div class="palocka_2"></div>
-                <div class="section_text">
-                    <p>Unfortunately, About Us pages are often treated as an obligation rather than an opportunity to
-                        build trust, tell your story, and share what makes you, you.</p>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Works -->
-
-
-        <div class="works">
-            <div class="works_col">
-                <div class="works_item">
-                    <img class="works_image" src="img/work_1.svg">
-                    <div class="works_info">
-                        <div class="works_title">Creative</div>
-                        <div class="works_text">Nice to meet you</div>
-                    </div>
-                </div>
-                <div class="works_item">
-                    <img class="works_image" src="img/work_5.svg">
-                    <div class="works_info">
-                        <div class="works_title">Creative</div>
-                        <div class="works_text">Nice to meet you</div>
-                    </div>
-                </div>
-            </div>
-            <div class="works_col">
-                <div class="works_item">
-                    <img class="works_image" src="img/work_2.svg">
-                    <div class="works_info">
-                        <div class="works_title">Creative</div>
-                        <div class="works_text">Nice to meet you</div>
-                    </div>
-                </div>
-                <div class="works_item">
-                    <img class="works_image" src="img/work_6.svg">
-                    <div class="works_info">
-                        <div class="works_title">Creative</div>
-                        <div class="works_text">Nice to meet you</div>
-                    </div>
-                </div>
-            </div>
-            <div class="works_col">
-                <div class="works_item">
-                    <img class="works_image" src="img/work_3.svg">
-                    <div class="works_info">
-                        <div class="works_title">Creative</div>
-                        <div class="works_text">Nice to meet you</div>
-                    </div>
-                </div>
-            </div>
-            <div class="works_col">
-                <div class="works_item">
-                    <img class="works_image" src="img/work_4.svg">
-                    <div class="works_info">
-                        <div class="works_title">Creative</div>
-                        <div class="works_text">Nice to meet you</div>
-                    </div>
-                </div>
-                <div class="works_item">
-                    <img class="works_image" src="img/work_7.svg">
-                    <div class="works_info">
-                        <div class="works_title">Creative</div>
-                        <div class="works_text">Nice to meet you</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- Section previos/next-->
-
-
-    <div class="section">
-        <div class="container">
-
-            <a href="#" class="previous round">&#8249;</a>
-            <a href="#" class="next round">&#8250;</a>
-
-            <div class="reviews">
-
-                <div class="reviews_item">
-                    <img class="reviews_photo" src="img/girl.svg">
-                    <div class="reviews_text">
-                        Equal rights and opportunities between men and women and the objective of ensuring active
-                        participation of women in all areas of national endeavour are priority tasks.
-                    </div>
-                    <div class="reviews_author">Jon Dog</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- Section--clients -->
-
-
-    <section class="section section--clients">
-        <div class="container">
-            <div class="section_header">
-
-                <h3 class="section_suptitle">Happy clients</h3>
-                <h2 class="section_title">What people say</h2>
-                <div class="palocka_2"></div>
-            </div>
-
-            <div class="clients">
-                <div class="clients_item">
-                    <img class="clients_photo" src="img/1.svg">
-                    <div class="clients_content">
-                        <div class="clients_name">Matthew Dix</div>
-                        <div class="clients_prof">Graphic Design</div>
-                        <div class="clients_text">Equal rights and opportunities between men and women and the objective
-                            of ensuring active participation of women in all areas of national endeavour are priority
-                            tasks.</div>
-                    </div>
-                </div>
-                <div class="clients_item">
-                    <img class="clients_photo" src="img/2.svg">
-                    <div class="clients_content">
-                        <div class="clients_name">Matthew Dix</div>
-                        <div class="clients_prof">Graphic Design</div>
-                        <div class="clients_text">Equal rights and opportunities between men and women and the objective
-                            of ensuring active participation of women in all areas of national endeavour are priority
-                            tasks.</div>
-                    </div>
-                </div>
-                <div class="clients_item">
-                    <img class="clients_photo" src="img/3.svg">
-                    <div class="clients_content">
-                        <div class="clients_name">Matthew Dix</div>
-                        <div class="clients_prof">Graphic Design</div>
-                        <div class="clients_text">Equal rights and opportunities between men and women and the objective
-                            of ensuring active participation of women in all areas of national endeavour are priority
-                            tasks.</div>
-                    </div>
-                </div>
-                <div class="clients_item">
-                    <img class="clients_photo" src="img/4.svg">
-                    <div class="clients_content">
-                        <div class="clients_name">Matthew Dix</div>
-                        <div class="clients_prof">Graphic Design</div>
-                        <div class="clients_text">Equal rights and opportunities between men and women and the objective
-                            of ensuring active participation of women in all areas of national endeavour are priority
-                            tasks.</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Section Blog -->
-
-
-    <section class="section">
-        <div class="container">
-            <div class="section_header">
-
-                <h3 class="section_suptitle">Our stories</h3>
-                <h2 class="section_title">Latest blog</h2>
-                <div class="palocka_2"></div>
-            </div>
-
-            <div class="blog">
-                <div class="blog_item">
-                    <div class="blog_header">
-                        <img class="blog_photo" src="img/blog_1.svg">
-                        <div class="blog_date">
-                            <div class="blog_date-day">15</div>
-                            Jan
-                        </div>
-                    </div>
-                    <div class="blog_content">
-                        <div class="blog_title"> What do you mean</div>
-                        <div class="blog_text">Equal rights and opportunities between men and women and the objective of
-                            ensuring active participation of women in all areas of national endeavour are priority
-                            tasks.</div>
-                    </div>
-                    <div class="blog_footer">
-                        <div class="blog_stat">
-
-                            <span class="blog_stat_item">
-                                <i class="far fa-eye"></i>542</span>
-                            <span class="blog_stat_item">
-                                <i class="far fa-comment-dots"></i>17</span>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="blog_item">
-                    <div class="blog_header">
-                        <img class="blog_photo" src="img/blog_2.svg">
-                        <div class="blog_date">
-                            <div class="blog_date-day">15</div>
-                            Jan
-                        </div>
-                    </div>
-                    <div class="blog_content">
-                        <div class="blog_title"> What do you mean</div>
-                        <div class="blog_text">Equal rights and opportunities between men and women and the objective of
-                            ensuring active participation of women in all areas of national endeavour are priority
-                            tasks.</div>
-                    </div>
-                    <div class="blog_footer">
-                        <div class="blog_stat">
-
-                            <span class="blog_stat_item">
-                                <i class="far fa-eye"></i>542</span>
-                            <span class="blog_stat_item">
-                                <i class="far fa-comment-dots"></i>17</span>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="blog_item">
-                    <div class="blog_header">
-                        <img class="blog_photo" src="img/blog_3.svg">
-                        <div class="blog_date">
-                            <div class="blog_date-day">15</div>
-                            Jan
-                        </div>
-                    </div>
-                    <div class="blog_content">
-                        <div class="blog_title"> What do you mean</div>
-                        <div class="blog_text">Equal rights and opportunities between men and women and the objective of
-                            ensuring active participation of women in all areas of national endeavour are priority
-                            tasks.</div>
-                    </div>
-                    <div class="blog_footer">
-                        <div class="blog_stat">
-
-                            <span class="blog_stat_item">
-                                <i class="far fa-eye"></i>542</span>
-                            <span class="blog_stat_item">
-                                <i class="far fa-comment-dots"></i>17</span>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Section Map -->
-
-
-    <section class="section section--map">
-        <div class="container">
-
-            <div class="map">
-                <h2 class="map_title">
-                    <div>
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <a href="https://goo.gl/maps/Rh5UGUaotNHV3ycSA" target="_blank">Open Map</a>
-                </h2>
-                <div class="palocka_2"></div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-
-
-    <footer class="footer">
-        <div class="container">
-
-            <div class="footer_inner">
-                <div class="footer_col footer_col--first">
-                    <div class="footer_logo">MoGo</div>
-                    <div class="footer_text">Equal rights and opportunities between men and women and the objective of
-                        ensuring active participation of women in all areas of national endeavour are priority tasks.
-                    </div>
-
-                    <div class="footer_social">
-                        <div class="footer_social_header">
-                            <b>15k</b> followers
-                        </div>
-                        <div class="footer_social_content">
-                            Follow us:
-                            <a href="#" target="_blank">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <form class="subscribe" action="/" method="post">
-                        <input class="subscribe_input" type="email" name="name" placeholder="Your email...">
-                        <button class="subscribe_btn" type="submit">Subscribe</button>
-                    </form>
-
-                </div>
-
-                <div class="footer_col footer_col--second">
-                    <div class="footer_title">Blogs</div>
-
-                    <div class="blogs">
-                        <div class="blogs_item">
-                            <img class="blogs_img" src="img/blogs_1.svg">
-
-                            <div class="blogs_content">
-                                <a class="blogs_title" href="">Lorem inspum dolor sit asset, consetration adolop.</a>
-                                <div class="blogs_date">Dec 01, 2021</div>
-                            </div>
-
-                        </div>
-
-                        <div class="blogs_item">
-                            <img class="blogs_img" src="img/blogs_2.svg">
-
-                            <div class="blogs_content">
-                                <a class="blogs_title" href="">Lorem inspum dolor sit asset, consetration adolop.</a>
-                                <div class="blogs_date">Dec 01, 2021</div>
-                            </div>
-
-                        </div>
-
-                        <div class="blogs_item">
-                            <img class="blogs_img" src="img/blogs_3.svg">
-
-                            <div class="blogs_content">
-                                <a class="blogs_title" href="">Lorem inspum dolor sit asset, consetration adolop.</a>
-                                <div class="blogs_date">Dec 01, 2021</div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-                <div class="footer_col footer_col--third">
-                    <div class="footer_title">Instagram</div>
-
-                    <div class="instagram">
-                        <a class="instagram_item" href="" target="_blank">
-                            <img class="instagram_img" src="img/inst_1.svg">
-                        </a>
-                        <a class="instagram_item" href="" target="_blank">
-                            <img class="instagram_img" src="img/inst_2.svg">
-                        </a>
-                        <a class="instagram_item" href="" target="_blank">
-                            <img class="instagram_img" src="img/inst_3.svg">
-                        </a>
-                        <a class="instagram_item" href="" target="_blank">
-                            <img class="instagram_img" src="img/inst_4.svg">
-                        </a>
-                        <a class="instagram_item" href="" target="_blank">
-                            <img class="instagram_img" src="img/inst_5.svg">
-                        </a>
-                        <a class="instagram_item" href="" target="_blank">
-                            <img class="instagram_img" src="img/inst_6.svg">
-                        </a>
-                        <a class="instagram_item" href="" target="_blank">
-                            <img class="instagram_img" src="img/inst_7.svg">
-                        </a>
-                        <a class="instagram_item" href="" target="_blank">
-                            <img class="instagram_img" src="img/inst_8.svg">
-                        </a>
-                        <a class="instagram_item" href="" target="_blank">
-                            <img class="instagram_img" src="img/inst_9.svg">
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Copyright -->
-
-            <div class="copyright">
-                2021 MoGo site by <span>Yuliya</span>
-            </div>
-        </div>
-    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script scr="js/app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="C:\Users\brisc\Desktop\CODING\Projects\5\js\app.js"></script>
 
 </body>
 
