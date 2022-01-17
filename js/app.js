@@ -27,10 +27,9 @@ $(function () {
     /* Smooth scroll */
     $("[data-scroll]").on("click", function (event) {
         event.preventDefault();
-
-        var $this = $(this),
-            blockId = $this.data('scroll'),
-            blockOffset = $(blockId).offset().top;
+        let $this = $(this);
+        let blockId = $this.data('scroll');
+        let blockOffset = $(blockId).offset().top;
 
         $("#nav a").removeClass("active");
         $this.addClass("active");
