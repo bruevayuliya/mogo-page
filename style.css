@@ -1263,6 +1263,11 @@ a:hover {
 }
 
 
+
+
+/* Media */
+
+
 @media (max-width: 1230px) {
     /* Intro */
 
@@ -1325,6 +1330,10 @@ a:hover {
     }
 
     /* Reviews */
+
+    .reviews .slick-slider {
+        padding: 0 60px;
+    }
 
     .reviews {
         padding-right: 60px;
@@ -1475,6 +1484,15 @@ a:hover {
 
     /* Reviews */
 
+    .reviews .slick-slider {
+        padding: 0;
+    }
+
+    .slick-arrow {
+        top: 18%;
+    }
+
+
     .reviews_photo {
         display: block;
         position: static;
@@ -1595,6 +1613,15 @@ a:hover {
     }
 
     /* Reviews */
+
+
+    .reviews .slick-slider {
+        padding: 0;
+    }
+
+    .slick-arrow {
+        top: 18%;
+    }
 
     .reviews {
         padding-left: 40px;
