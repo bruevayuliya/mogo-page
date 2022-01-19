@@ -34,7 +34,11 @@ hr {
     border: 0;
 }
 
+
+
 /* Page */
+
+
 .page {
     overflow: hidden;
 }
@@ -112,17 +116,21 @@ hr {
 
 .header.fixed {
     padding: 8px;
-    background-color: #fa8e8e;
+    background-color: #e89284;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     transform: translate3d(0, 0, 0);
+    transition: 0.8s;
+    margin: 0;
+    border: 0;
 }
 
 .header.active {
-    background-color: #fa8e8e;
+    background-color: #e89284;
+    transition: 0.8s;
 }
 
 .header_inner {
@@ -229,6 +237,7 @@ hr {
 .nav-toggle.active .nav-toggle_item:before {
     transform-origin: left top;
     transform: rotate(45deg) translate3d(0px, -2px, 0);
+
 }
 
 .nav-toggle.active .nav-toggle_item:after {
@@ -343,7 +352,6 @@ hr {
     background: url("img/landscape.svg") center no-repeat;
     background-size: cover;
     padding-bottom: 0;
-    margin-bottom: 40px;
 }
 
 .section--map {
@@ -658,9 +666,14 @@ hr {
 
 /* Reviews */
 
+#section_reviews {
+    padding-bottom: 40px;
+}
+
 
 .reviews {
     position: relative;
+    margin-bottom: 30px;
 }
 
 .reviews .slick-slider {
@@ -1311,18 +1324,6 @@ hr {
     .clients_item {
         width: 100%;
     }
-
-
-    /* Footer */
-
-    /* .footer_col--first {
-        width: 60%;
-    }
-
-    .footer_col--second {
-        width: 40%;
-        margin-left: 20px;
-    } */
 }
 
 
@@ -1347,7 +1348,7 @@ hr {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #fa8e8e;
+        background-color: #e89284;
     }
 
     .nav_link {
@@ -1358,7 +1359,9 @@ hr {
 
     .nav-toggle {
         display: block;
+        margin: 0;
     }
+
 
     /* Section */
 
@@ -1423,6 +1426,10 @@ hr {
     }
 
     /* Reviews */
+
+    #section_reviews {
+        padding-top: 20px;
+    }
 
     .reviews .slick-slider {
         padding-left: 60px;
@@ -1549,6 +1556,10 @@ hr {
     }
 
     /* Reviews */
+
+    #section_reviews {
+        padding-top: 20px;
+    }
 
 
     .reviews .slick-slider {

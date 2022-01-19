@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <title>Mogo</title>
 </head>
 
@@ -27,8 +28,8 @@
                 <nav class="nav" id="nav">
                     <a class="nav_link" href="#" data-scroll="#about">About</a>
                     <a class="nav_link" href="#" data-scroll="#devices">Service</a>
-                    <a class="nav_link" href="#" data-scroll="#blog">Blog</a>
-                    <a class="nav_link" href="#" data-scroll="#works">Work</a>
+                    <a class="nav_link" href="#" data-scroll="#blog">Work</a>
+                    <a class="nav_link" href="#" data-scroll="#works">Blog</a>
                     <a class="nav_link" href="#" data-scroll="#footer">Contact</a>
                     <a class="nav_link" href="#">
                         <i class="fas fa-shopping-cart"></i>
@@ -141,11 +142,11 @@
         <!-- Statistics -->
 
 
-        <div class="statistics">
+        <div class="statistics" id="statistics">
             <div class="container">
                 <div class="stat">
                     <div class="stat_item">
-                        <div class="stat_count">42</div>
+                        <div class="stat_count">1042</div>
                         <div class="stat_text">web design projects</div>
                     </div>
                     <div class="stat_item">
@@ -153,15 +154,15 @@
                         <div class="stat_text">happy client</div>
                     </div>
                     <div class="stat_item">
-                        <div class="stat_count">15</div>
+                        <div class="stat_count">105</div>
                         <div class="stat_text">award winner</div>
                     </div>
                     <div class="stat_item">
-                        <div class="stat_count">99</div>
+                        <div class="stat_count">999</div>
                         <div class="stat_text">cup of coffee</div>
                     </div>
                     <div class="stat_item">
-                        <div class="stat_count">24</div>
+                        <div class="stat_count">624</div>
                         <div class="stat_text">members</div>
                     </div>
                 </div>
@@ -541,7 +542,7 @@
         <!-- Work -->
 
 
-        <section class="section" id="works">
+        <section class="section" id="blog">
             <div class="container">
                 <div class="section_header">
 
@@ -626,7 +627,7 @@
         <!-- Section previos/next-->
 
 
-        <div class="section">
+        <div id="section_reviews">
             <div class="container">
 
                 <div class="reviews">
@@ -733,7 +734,7 @@
         <!-- Blog -->
 
 
-        <section class="section" id="blog">
+        <section class="section" id="works">
             <div class="container">
                 <div class="section_header">
 
@@ -948,9 +949,12 @@
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js\app.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+
 
 </body>
 
