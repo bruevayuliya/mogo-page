@@ -36,24 +36,23 @@ $(function () {
 
         $("html, body").animate({
             scrollTop: blockOffset
-        }, 200);
+        },1000);
 
-        // --- Chast v kotory menyu i menu burgeru uberaetsya klass "active" --> S T A R T
         toggle_menu_active();
-        // --- Chast v kotory menyu i menu burgeru uberaetsya klass "active" --> E N D
+
     });
 
 
 
     /* Menu nav toggle */
-    $("#nav_toggle").on("click", function (event) { // Pri najatii na menyu burger
+    $("#nav_toggle").on("click", function (event) { 
         event.preventDefault();
         toggle_menu_active();
     });
 
     function toggle_menu_active() {
-        $("#nav_toggle").toggleClass("active"); // Dobavlyaet uberaet active class u burgera
-        $("#nav").toggleClass("active"); // Dobavlyaet uberaet class active u menu
+        $("#nav_toggle").toggleClass("active"); 
+        $("#nav").toggleClass("active"); 
     }
 
 
@@ -107,7 +106,6 @@ $(function () {
 });
 
 
-// Zdes' on oschityvaet rasstoyanie elementa i oilojenie vidimogo okna
 function isInViewport(element) {
     var elementTop = element.offset().top;
     var elementBottom = elementTop + element.outerHeight();

@@ -683,6 +683,7 @@ hr {
 .reviews_item {
     padding-left: 205px;
     position: relative;
+    padding-bottom: 10px;
 }
 
 .reviews_photo {
@@ -1140,11 +1141,10 @@ hr {
 .blogs_title {
     display: block;
     color: #333;
-    font-size: 12px;
-    text-transform: uppercase;
+    font-size: 14px;
     text-decoration: none;
     margin-bottom: 10px;
-    margin-left: 4px;
+    margin-left: 15px;
     line-height: 1.2;
 }
 
@@ -1324,6 +1324,17 @@ hr {
     .clients_item {
         width: 100%;
     }
+
+    /* works */
+
+    .works_title {
+        font-size: 13px;
+    }
+
+    .works_text {
+        font-size: 15px;
+    }
+
 }
 
 
@@ -1458,6 +1469,8 @@ hr {
         font-size: 20px;
     }
 
+    /* works */
+
     .works {
         flex-wrap: wrap;
     }
@@ -1466,6 +1479,15 @@ hr {
         flex: none;
         width: 50%;
     }
+
+    .works_title {
+        font-size: 12px;
+    }
+
+    .works_text {
+        font-size: 14px;
+    }
+
 
     /* Blog */
 
@@ -1605,6 +1627,14 @@ hr {
 
     .works_image {
         width: 100%;
+    }
+
+    .works_title {
+        font-size: 11px;
+    }
+
+    .works_text {
+        font-size: 13px;
     }
 
 
